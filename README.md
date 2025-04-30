@@ -1,4 +1,4 @@
- # 🌿 Smart Garden IoT Sensor Dashboard
+# 🌿 Smart Garden IoT Sensor Dashboard
 
 ![Project Banner](https://img.shields.io/badge/Project-IoT%20Dashboard-brightgreen?style=for-the-badge&logo=leaflet)
 
@@ -20,30 +20,29 @@ When conditions cross preset thresholds, the system automatically activates a vi
 
 ## 🎨 Project Features
 
-- **Real-time Monitoring**: Instant updates every 2 seconds.
-- **Dynamic Visualizations**: Modern, animated gauges.
-- **Automated Watering Alert**: UI indication for watering.
+- **Real-time Monitoring**: Instant updates every 2 seconds.  
+- **Dynamic Visualizations**: Modern, animated gauges.  
+- **Automated Watering Alert**: UI indication for watering.  
 - **Responsive UI**: Looks great on all devices.
 
 ---
- 
 
 ## ⚙️ Tech Stack
 
-| Component           | Technologies Used                    |
-|---------------------|--------------------------------------|
-| 🖥️ **Frontend**     | React, Pure CSS                      |
-| ⚡ **Backend**       | Node.js, Express                     |
-| 🌐 **IoT Device**   | ESP32, DHT11, Soil Moisture Sensor   |
-| 🔗 **Communication**| HTTP (Wi-Fi), JSON                   |
+| Component            | Technologies Used                  |
+|----------------------|------------------------------------|
+| 🖥️ **Frontend**      | React, Pure CSS                    |
+| ⚡ **Backend**        | Node.js, Express                   |
+| 🌐 **IoT Device**    | ESP32, DHT11, Soil Moisture Sensor |
+| 🔗 **Communication** | HTTP (Wi-Fi), JSON                 |
 
 ---
 
 ## 🔌 Hardware Setup
 
-- **ESP32 NodeMCU Board**
-- **DHT11 Temperature & Humidity Sensor**
-- **Soil Moisture Sensor**
+- **ESP32 NodeMCU Board**  
+- **DHT11 Temperature & Humidity Sensor**  
+- **Soil Moisture Sensor**  
 - **Breadboard & Jumper Wires**
 
 > **Note:** Connect sensors carefully to avoid damage.
@@ -59,11 +58,12 @@ flowchart LR
         Soil[Soil Moisture Sensor]
     end
     DHT & Soil --> ESP32[ESP32 IoT Device]
-    ESP32 -- Wi-Fi POST --> Backend[Node.js API]
-    Frontend[React Dashboard] -- Poll Every 2s --> Backend[API]
-    Backend -- JSON Response --> Frontend
----
+    ESP32 -- "Wi-Fi POST" --> Backend[Node.js API]
+    Frontend[React Dashboard] -- "Poll Every 2s" --> Backend[API]
+    Backend -- "JSON Response" --> Frontend
 ```
+
+---
 
 ## 🚧 Installation
 
@@ -90,10 +90,9 @@ npm start
 ```
 
 ---
- 
 
 ## 👨‍💻 Author
 
 **Your Name**  
- https://github.com/MihisaraJayasinghe
+[GitHub – MihisaraJayasinghe](https://github.com/MihisaraJayasinghe)
 
