@@ -62,7 +62,6 @@ subgraph Sensors
   DHT[DHT11 Sensor] & Soil[Soil Moisture Sensor]
   Sensors --> ESP32
 end
-
 ```
 
 ---
