@@ -52,17 +52,15 @@ When conditions cross preset thresholds, the system automatically activates a vi
 
 ## 🚦 How It Works
 
-```mermaid
 flowchart LR
-ESP32[ESP32 IoT Device] -- Wi-Fi POST --> Backend[Node.js API]
-Backend -- JSON Response --> Frontend[React Dashboard]
-Frontend -- Polling Every 2s --> Backend
-
-subgraph Sensors
-  DHT[DHT11 Sensor] & Soil[Soil Moisture Sensor]
-  Sensors --> ESP32
-end
-```
+    subgraph Sensors
+        DHT[DHT11 Sensor]
+        Soil[Soil Moisture Sensor]
+    end
+    DHT & Soil --> ESP32[ESP32 IoT Device]
+    ESP32 -- Wi-Fi POST --> Backend[Node.js API]
+    Frontend[React Dashboard] -- Poll Every 2s --> Backend[API]
+    Backend -- JSON Response --> Frontend
 
 ---
 
