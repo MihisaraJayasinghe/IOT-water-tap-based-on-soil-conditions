@@ -63,6 +63,7 @@ flowchart LR
     Frontend[React Dashboard] -- Poll Every 2s --> Backend[API]
     Backend -- JSON Response --> Frontend
 ---
+```
 
 ## 🚧 Installation
 
