@@ -52,6 +52,7 @@ When conditions cross preset thresholds, the system automatically activates a vi
 
 ## 🚦 How It Works
 
+```mermaid
 flowchart LR
     subgraph Sensors
         DHT[DHT11 Sensor]
@@ -61,7 +62,6 @@ flowchart LR
     ESP32 -- Wi-Fi POST --> Backend[Node.js API]
     Frontend[React Dashboard] -- Poll Every 2s --> Backend[API]
     Backend -- JSON Response --> Frontend
-
 ---
 
 ## 🚧 Installation
